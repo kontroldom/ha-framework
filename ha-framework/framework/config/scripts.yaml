@@ -1,0 +1,8 @@
+# KontrolDom Framework - Scripts
+# Przykładowe skrypty
+
+restart_system:
+  alias: "Restart Systemu"
+  sequence:
+    - service: homeassistant.restart
+  mode: single

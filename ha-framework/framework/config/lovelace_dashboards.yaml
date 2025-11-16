@@ -1,0 +1,7 @@
+# KontrolDom Framework - Lovelace Dashboards
+dashboards:
+  kontroldom-main:
+    title: KontrolDom
+    icon: mdi:home
+    filename: dashboards/kontroldom.yaml
+    require_admin: false

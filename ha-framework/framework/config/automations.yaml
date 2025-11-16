@@ -1,0 +1,14 @@
+# KontrolDom Framework - Automations
+# Przykładowe automatyzy
+
+- id: welcome_home
+  alias: "Witaj w domu"
+  trigger:
+    - platform: state
+      entity_id: person.person_name
+      to: "home"
+  action:
+    - service: notify.mobile_app
+      data:
+        message: "Witaj w domu!"
+  mode: single

@@ -1,0 +1,17 @@
+# KontrolDom Framework - Main Dashboard
+title: KontrolDom
+path: kontroldom
+icon: mdi:home
+badges: []
+cards:
+  - type: entities
+    title: System
+    entities:
+      - entity_id: sun.sun
+        name: Słońce
+      - entity_id: sensor.cpu_usage
+        name: CPU
+  - type: markdown
+    content: |
+      ## 🏠 KontrolDom Framework
+      Witaj w inteligentnym domu z KontrolDom!

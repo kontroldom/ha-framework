@@ -1,0 +1,32 @@
+kontroldom-watermark:
+  # baza
+  primary-color: "#1e88e5"
+  background-color: "#111111"
+  text-primary-color: "#ffffff"
+
+  # globalne tło
+  ha-card-background: "rgba(0,0,0,0.4)"
+
+  # WATERMARK globalny
+  card-mod-theme: kontroldom-watermark
+  card-mod-root-yaml: |
+    :host {
+      --ha-app-background: url("/local/kontroldom/watermark.png") !important;
+      --app-header-background-color: rgba(0,0,0,0.6) !important;
+      background-size: 500px !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      opacity: 0.15 !important;
+    }
+
+    .content {
+      background-image: url("/local/kontroldom/watermark.png") !important;
+      background-size: 400px !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      opacity: 0.12;
+    }
+
+    #view {
+      background: rgba(0,0,0,0.85) !important;
+    }
